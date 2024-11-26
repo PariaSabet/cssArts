@@ -1,0 +1,327 @@
+body{
+    display: grid;
+}
+.snowman{
+  display: flex;
+  width: 100%;
+  height: 310px;
+  place-items: center;
+  position: relative;
+  transform-origin: center center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: scale(0.65);
+  margin-top: -54px;
+}
+.snowman-hat{
+    border-bottom: 100px solid #FFAB00;
+    border-left: 17px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 72px;
+    transform: rotate(28deg);
+    position: relative;
+    left: 178px;
+    top: -93px;
+    z-index: 2;
+}
+
+.snowman-hat::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 100px;
+    background: #1314171c;
+    left: 40px;
+    transform: skew(8deg, 1deg);
+}
+
+.snowman-hat::after{
+    width: 102px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    z-index: 3;
+    top: 91px;
+    left: -16px;
+    border-radius: 45% 55% 100% 0% / 99% 100% 0% 1%;
+}
+
+.snowman-head{
+    width:150px;
+    height:150px;
+    background:#fff;
+    border-radius:46% 54% 51% 49% / 37% 50% 50% 63%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.snowman-eye-left{
+    width:25px;
+    height:30px;
+    background:#424242;
+    position:relative;
+    left:-10px;
+    top:-20px;
+    border-radius: 49% 51% 52% 48% / 58% 63% 37% 42%;
+}
+
+.snowman-eye-left::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 16px;
+    border-radius: 50%;
+    background: #dddddd6e;
+    top: 7px;
+    left: 5px;
+    border-radius: 49% 51% 52% 48% / 58% 63% 37% 42%;
+}
+
+.snowman-eye-left::after{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 9px;
+    border-radius: 50%;
+    background: #dddddd6e;
+    top: 9px;
+    left: 9px;
+    border-radius: 49% 51% 52% 48% / 58% 63% 37% 42%;
+}
+
+.snowman-eye-right{
+    width:25px;
+    height:30px;
+    background:#424242;
+    position:relative;
+    top:-25px;
+    left:0px;
+    border-radius: 49% 51% 52% 48% / 58% 63% 37% 42%;
+}
+
+.snowman-eye-right::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 16px;
+    border-radius: 50%;
+    background: #dddddd6e;
+    top: 7px;
+    left: 5px;
+    border-radius: 49% 51% 52% 48% / 58% 63% 37% 42%;
+}
+
+.snowman-eye-right::after{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 9px;
+    border-radius: 50%;
+    background: #dddddd6e;
+    top: 9px;
+    left: 9px;
+    border-radius: 49% 51% 52% 48% / 58% 63% 37% 42%;
+}
+
+.snowman-nose{
+    width: 8px;
+    height: 70px;
+    background: #E64A19;
+    position: relative;
+    left: -70px;
+    top: 10px;
+    border-radius: 49% 51% 52% 48% / 92% 92% 8% 8%;
+    transform: rotate(-95deg);
+    border-right: 8px solid #13141724;
+}
+
+.snowman-mouth{
+    position: relative;
+    left:-50px;
+    top:40px;
+}
+
+.snowman-dots{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:#262626;
+    position:relative;
+}
+
+.dot1{
+    top:5px;
+    left:-29px;
+}
+.dot2{
+    top:4px;
+    left:-22px;
+}
+.dot3{
+    top:2px;
+    left:-13px;
+}
+.dot4{
+    top:-3px;
+    left:-5px;
+}
+.dot5{
+    top:-11px;
+    left:3px;
+}
+.dot6{
+    top:-20px;
+    left:10px;
+}
+.dot7{
+    top:-31px;
+    left:16px;
+}
+
+.snowman-body{
+    width:200px;
+    height:200px;
+    background:#fff;
+    border-radius:49% 51% 51% 49% / 65% 69% 31% 35%;
+    border-bottom:9px solid #dddddd94;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    top:150px;
+    left:-165px;
+}
+
+.snowman-body::before{
+    width: 200px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1314172e;
+    position: absolute;
+    content: "";
+    transform: skew(0deg, 1deg);
+    top: 202px;
+    z-index: -1;
+}
+
+.snowman-button{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#212121;
+    position:relative;
+    border-radius:51% 49% 53% 47% / 44% 51% 49% 56% ;
+}
+
+.but1{
+    top:-25px;
+    left:-46px;
+}
+.but2{
+    top:-15px;
+    left:-61px;
+}
+.but3{
+    top:-2px;
+    left:-67px;
+}
+.but4{
+    top:12px;
+    left:-64px;
+}
+
+.snowman-left-hand{
+    width: 10px;
+    height: 65px;
+    background: #8D6E63;
+    transform: rotate(45deg);
+    position: relative;
+    left: 89px;
+    top: -49px;
+    border-radius: 64px 57px 61px 104px;
+}
+
+.snowman-left-hand::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 45px;
+  background: #8D6E63;
+  top: -39px;
+  left: 8px;
+  transform: rotate(20deg);
+  border-radius: 2px 2px 2px 2px;
+}
+
+.snowman-branches1{
+    width: 5px;
+    height: 24px;
+    background: #8D6E63;
+    transform: rotate(-50deg);
+    position: relative;
+    top: -40px;
+    left: -2px;
+}
+
+.snowman-branches1::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 24px;
+    background: #8D6E63;
+    transform: rotate(108deg);
+    top: 18px;
+    left: 17px;
+}
+
+.snowman-right-hand{
+    width: 10px;
+    height: 65px;
+    background: #8D6E63;
+    transform: rotate(-45deg);
+    position: relative;
+    left: -89px;
+    top: -49px;
+    border-radius:64px 57px 61px 104px;
+    z-index: -1;
+}
+
+.snowman-right-hand::before{
+    position:absolute;
+    content:"";
+    width: 8px;
+    height: 45px;
+    background: #8D6E63;
+    top: -39px;
+    left: 8px;
+    transform: rotate(20deg);
+    border-radius: 2px 2px 2px 2px;
+}
+
+.snowman-branches2{
+    width: 5px;
+    height: 24px;
+    background: #8D6E63;
+    transform: rotate(-50deg);
+    position: relative;
+    top: -40px;
+    left: -2px;
+}
+
+.snowman-branches2::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 24px;
+    background: #8D6E63;
+    transform: rotate(108deg);
+    top: 18px;
+    left: 17px;
+}

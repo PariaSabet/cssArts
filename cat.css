@@ -1,0 +1,247 @@
+/* Add these styles at the beginning of the file */
+
+.cat-container {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    transform: scale(0.75);
+}
+
+.cat-head {
+    width: 251px;
+    height: 161px;
+    border-radius: 50% 50% 49% 51% / 53% 49% 51% 47%;
+    background-color: black;
+    position: absolute;
+    left: 182px;
+    top: 90px;
+    z-index: 9;
+}
+
+.cat-ear-left {
+    width: 70px;
+    height: 105px;
+    border-radius: 17% 83% 46% 54% / 76% 89% 11% 24%;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    left: 198px;
+    transform: rotate(326deg);
+    transform: translate(8px, 10px);
+}
+
+.cat-ear-left::before {
+    content: "";
+    width: 59px;
+    height: 86px;
+    border-radius: 17% 83% 46% 54% / 76% 89% 11% 24%;
+    background-color: pink;
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    transform: rotate(326deg);
+    transform: translate(8px, 10px);
+}
+
+.cat-ear-right {
+    width: 70px;
+    height: 105px;
+    border-radius: 86% 14% 0% 100% / 100% 91% 9% 0%;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    right: 198px;
+    transform: rotate(326deg);
+    transform: translate(8px, 10px);
+}
+
+.cat-ear-right::before {
+    content: "";
+    width: 59px;
+    height: 86px;
+    border-radius: 86% 14% 0% 100% / 100% 91% 9% 0%;
+    background-color: pink;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    transform: rotate(326deg);
+    transform: translate(8px, 10px);
+}
+
+.cat-eye-left {
+    width: 30px;
+    height: 30px;
+    background: #ff9800;
+    border-radius: 50%;
+    position: absolute;
+    top: 43px;
+    left: 57px;
+}
+
+.cat-eye-left::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.cat-eye-right {
+    width: 30px;
+    height: 30px;
+    background: #ff9800;
+    border-radius: 50%;
+    position: absolute;
+    top: 43px;
+    right: 57px;
+}
+
+.cat-eye-right::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.cat-mark {
+    width: 50px;
+    height: 107px;
+    background-color: white;
+    position: absolute;
+    border-radius: 52% 48% 0% 100% / 100% 91% 9% 0%;
+    top: 55px;
+    left: 100px;
+}
+
+.cat-mark::before {
+    content: "";
+    width: 98px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 69px 31px 0 0 white;
+    position: absolute;
+    transform: rotate(40deg);
+    left: -92px;
+    top: -60px;
+}
+
+.cat-mark::after {
+    content: "";
+    width: 98px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 69px 31px 0 0 white;
+    position: absolute;
+    transform: rotate(321deg) scalex(-1);
+    right: -93px;
+    top: -60px;
+}
+
+.cat-nose {
+    width: 22px;
+    height: 22px;
+    border-radius: 58% 42% 47% 53% / 16% 22% 78% 84%;
+    background-color: pink;
+    z-index: 30;
+    position: absolute;
+    left: 114px;
+    top: 75px;
+}
+
+.cat-nose-marks {
+    width: 2px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 10px;
+    top: 21px;
+}
+
+.cat-nose-marks::before {
+    content: "";
+    width: 2px;
+    height: 21px;
+    background-color: black;
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    transform: rotate(60deg);
+}
+
+.cat-nose-marks::after {
+    content: "";
+    width: 2px;
+    height: 21px;
+    background-color: black;
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    transform: rotate(-60deg);
+}
+
+.cat-body {
+    border-bottom: 318px solid white;
+    border-left: 62px solid transparent;
+    border-right: 62px solid transparent;
+    height: 23px;
+    width: 158px;
+    transform: rotate(0deg);
+    position: relative;
+    left: 0px;
+    top: 60px;
+    z-index: 5;
+}
+
+.cat-body-mark-left {
+    width: 41px;
+    height: 366px;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    top: 169px;
+    left: 173px;
+    transform: rotate(10deg);
+}
+
+.cat-body-mark-right {
+    width: 41px;
+    height: 366px;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    top: 169px;
+    right: 162px;
+    transform: rotate(-10deg);
+}
+
+.cat-tail {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 15px -2px 0 0 black;
+    z-index: 4;
+    transform: rotate(171deg);
+    position: absolute;
+    left: 131px;
+    top: 205px;
+}
+
+.cat-background {
+    height: 200px;
+    width: 600px;
+    background-color: khaki;
+    z-index: 3;
+    position: absolute;
+    bottom: 0px;
+}

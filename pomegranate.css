@@ -1,0 +1,71 @@
+.pomegranate{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* transform: scale(0.35); */
+  }
+  
+  .fruit{
+    z-index:3;
+  }
+
+  .head{
+    position:relative;
+    height: 73px;
+  }
+  
+  .shadow-1{
+    width: 66px;
+    height: 89px;
+      border-radius: 66% 34% 51% 50% / 48% 42% 43% 40%;
+      position: absolute;
+      top: 44px;
+      left: 25px;
+      background-color: #D32F2F;
+  }
+  
+  .shadow-2{
+    width: 171px;
+    height: 149px;
+      border-radius: 62% 68% 55% 67% / 56% 63% 58% 26%;
+      position: absolute;
+      top: 6px;
+      left: -5px;
+      background-color: #C62828;
+  }
+  
+  .bottom{
+    width: 227px;
+    height: 177px;
+      background-color: #B71C1C;
+      border-radius: 41% 38% 43% 40% / 48% 50% 43% 40%;
+      overflow:hidden;
+      position: relative;
+  }
+  
+ 
+
+  .leaf {
+    position: absolute;
+    background-color: #C62828;
+    border-radius: 134% 0% 133% 0%;
+    height: 79%;
+    top: 50%;
+    width: 20%;
+    z-index: 2;
+}
+
+.leaf.left {
+ left: 51%;
+    transform-origin: bottom left;
+    transform: rotate(279deg);
+}
+.leaf.middle {
+  left: 40%;
+  top: 25%;
+  transform: rotate(-40deg);
+}
+.leaf.right {
+  left: 50%;
+  transform-origin: bottom left;
+}

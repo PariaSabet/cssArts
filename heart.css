@@ -1,0 +1,62 @@
+/* body {
+    margin: 0;
+  } */
+  
+  .stripes {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* height: 100vh; */
+    background: repeating-linear-gradient(
+      90deg,
+      #1e1f26,
+      #1e1f26 10px,
+      #e3e4e8 10px,
+      #e3e4e8 28px
+    );
+  }
+  
+  #heart {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+  }
+  
+  #heart::before,
+  #heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 48px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+  }
+  
+  #heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    background: repeating-linear-gradient(
+      0deg,
+      #1e1f26,
+      #1e1f26 10px,
+      #e3e4e8 10px,
+      #e3e4e8 19px
+    );
+  }
+  
+  #heart::after {
+    left: 2px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  
+    background: repeating-linear-gradient(
+      90deg,
+      #1e1f26,
+      #1e1f26 10px,
+      #e3e4e8 10px,
+      #e3e4e8 19px
+    );
+  }
+  

@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #ffc0cb;
+  }
+
+.container-watermelon {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.75);
+}
+  
+  .watermelon {
+    width: 320px;
+    height: 160px;
+    background: #ff395d;
+    position: absolute;
+    top: 25%;
+    left: -11%;
+    transform: rotate(-25deg);
+    border-right: 20px solid #008000;
+    border-left: 20px solid #008000;
+    border-bottom: 20px solid #008000;
+    border-radius: 0 0 200px 200px;
+  }
+  
+  .watermelon::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 2px; 
+      width: calc(43% + 19px);
+      height: calc(80% + 21px);
+      background: rgba(255,255,255,0.2);
+      border-radius: 0 0 0 200px;
+  }
+  
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #262626;
+    border-radius: 50%;
+    margin: 20px;
+    position: relative;
+    left: 8%;
+  }
+  
+  span:nth-child(6),
+  span:nth-child(12),
+  span:nth-child(13) {
+    background: transparent;
+  }
