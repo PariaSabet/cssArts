@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="cat.css" />
     <link rel="stylesheet" href="pomegranate.css" />
     <link rel="stylesheet" href="bee.css" />
+    <link rel="stylesheet" href="wall.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+
   </head>
   <body>
     <div class="notification-bar">
@@ -21,6 +26,7 @@
     </div>
     
     <div class="gallery-grid">
+
       <div class="art-cell purple full-row">
         <div class="container">
           <div class="container-watermelon">
@@ -48,10 +54,12 @@
 
       <div class="art-cell stripes full-row">
         <div class="container">
-          <div id="heart"></div>
-          <div id="heart"></div>
-          <div id="heart"></div>
-          <div id="heart"></div>
+          <div class="heart-container"> 
+            <div id="heart"></div>
+            <div id="heart"></div>
+            <div id="heart"></div>
+            <div id="heart"></div>
+          </div>
         </div>
       </div>
 
@@ -111,7 +119,7 @@
       </div>
 
       <div class="art-cell dark-gray full-row">
-        <div class="container">
+        <div class="container bees">
           <div class="bee-container">
             
               <div class="insect">
@@ -125,6 +133,20 @@
           </div>
         </div>
       </div>
+
+      <div class="art-cell gray full-row">
+        <div class="container">
+          <div class="masonry">
+            <!-- Bricks will be dynamically added by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
 
     <!--  <div class="art-cell purple">
          <div class="container">

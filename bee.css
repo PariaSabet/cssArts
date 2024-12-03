@@ -1,8 +1,9 @@
 .bee-container {
-    width: 200px;
-    height: 163px;
+    width: 100%;
+    height: 200px;
     position: relative;
-    margin-top: -81px;
+    /* margin-top: -81px; */
+	margin: 20px;
 }
 
 .bee {
