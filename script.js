@@ -62,6 +62,19 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	createMasonryBricks(100);
+
+	const lastUpdated = new Date('2024-12-11');
+	const updateInfo = document.createElement('div');
+	updateInfo.className = 'update-info';
+	
+	// Format the date to show month and year
+	const formattedDate = lastUpdated.toLocaleString('en-US', { 
+		month: 'long',
+		year: 'numeric'
+	});
+	
+	updateInfo.textContent = `Last updated: ${formattedDate}`;
+	document.querySelector('.notification-bar').appendChild(updateInfo);
 });
 
 

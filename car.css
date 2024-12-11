@@ -1,0 +1,189 @@
+.ground{
+	height: 95%;
+	border-bottom: 30px solid gray
+}
+
+.wrapper{
+/*   height: 450px; */
+  width: 720px;
+  border-bottom: 8px solid #4CA653;
+  overflow: hidden;
+	bottom: 0;
+}
+
+.car{
+  height: 40%;
+  width: 40%;
+  overflow: hidden;
+  top: auto;
+	right: auto; 
+	left: 10%;
+	bottom: 0;
+  z-index: 1;
+}
+
+.car .car-body{
+  height: 85%;
+  width: 100%;
+  bottom: auto;
+  z-index: 2;
+  animation:car 0.75s infinite;
+  -webkit-animation:car 0.75s infinite;
+}
+
+.car .wheels{
+  height: 15%;
+  width: 80%;
+  top: auto;
+	bottom: 0;
+  z-index: 1;
+}
+
+.car .wheels .wheel{
+  height: 100%;
+  width: 20%;
+  background: #333;
+  top: auto;
+	bottom: 0;
+  border-radius: 0 0 30% 30%;
+}
+
+.car .mirrors{
+  height: 15%;
+  width: 100%;
+  bottom: auto; 
+	top: 40%;
+}
+
+.car .mirrors .mirror{
+  height: 100%;
+  width: 10%;
+  background: #333;
+  top: auto;
+	bottom: 0;
+  border-radius: 30%;
+}
+
+.car .car-body .part-one{
+  height: 50%;
+  width: 72%;
+  bottom: auto;
+  border: 10px solid #EE5557;
+  border-radius: 50% 50% 0 0 ;
+  overflow: hidden;
+}
+
+.car .car-body .part-two{
+  height: 50%;
+  width: 100%;
+  top: auto;
+	bottom: 0;
+  background: #EE5557;
+  border-radius: 40px 40px 20px 20px;
+}
+
+.car-body .part-one .drivmirror{
+  height: 20%;
+  width: 25%;
+  bottom: auto;
+  top: 1px;
+  background: #DDD;
+  border-radius: 25% ;
+}
+
+.car-body .part-one .helm{
+  height:40px;
+  width: 40px;
+  top: auto;
+  bottom: -35px;
+  border: 8px solid #333;
+  border-radius: 50% ;
+  left: auto; right: 18%;
+}
+
+.cat {
+  background:#73635D;
+  height: 60%;
+  top: auto;
+  bottom: 0;
+  width: 65px;
+  z-index: 0;
+  left: auto; right: 25px;
+}
+
+.cat:before, .cat:after {
+    width: 0;
+    height: 0;
+    top: -10px;
+    position: absolute;
+    content: "";
+}
+
+.cat:before{
+    border-left: 0px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #73635D;
+    left: 0;
+}
+
+.cat:after{
+    border-right: 0px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #73635D;
+    right: 0;
+}
+
+.cat .eyes{
+  position: absolute;
+  height: 8px; width: 8px;
+  background: #FFF;
+  border-radius: 100%;
+  top: 15px;
+}
+
+.cat .eyes.left{ left: 12px; }
+.cat .eyes.right{  right: 12px; }
+
+.cat .mouth{
+  position: absolute;
+  height: 4px; 
+	width: 60%;
+  background: #eee;
+  border-radius: 0 0 30% 30%;
+  top: 28px;
+  margin: auto;
+  left: 0; 
+	right: 0;
+}
+
+.car:hover .cat .mouth{
+  height: 6px; width: 6px;
+  border-radius: 50%;
+  top: 26px;
+}
+
+.car-body .part-two .lights{
+  height: 30%;
+  width: 80%;
+}
+
+.part-two .lights .light{
+  height: 100%;
+  width: 15%;
+  background: #FFF;
+  border-radius: 50%;
+}
+
+.part-two .lights.second{
+  height: 8px;
+  width: 80%;
+  top: auto;
+  bottom: 10%;
+}
+
+.part-two .lights.second .light{
+  width: 20px;
+  border-radius: 25%;
+}
+
+
