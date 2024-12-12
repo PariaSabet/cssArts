@@ -31,6 +31,7 @@ body {
 .dark-gray { background-color: #424242; }
 .gray { background-color: #212121; }
 .blue { background-color: #00b4ff }
+.light-purple { background-color: #cdb5cb }
 /* Container styles for all art pieces */
 .container {
     position: relative;

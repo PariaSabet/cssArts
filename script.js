@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	const updateInfo = document.createElement('div');
 	updateInfo.className = 'update-info';
 	
-	// Format the date to show month and year
 	const formattedDate = lastUpdated.toLocaleString('en-US', { 
 		month: 'long',
 		year: 'numeric'
