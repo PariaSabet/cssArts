@@ -1,4 +1,4 @@
-$(document).ready(function () {
+	$(document).ready(function () {
 	// Get the container element
 	const $container = $(".bee-container");
 	animateDiv(".insect", $container);
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	createMasonryBricks(100);
 
-	const lastUpdated = new Date('2024-12-11');
+	const lastUpdated = new Date('2025-03-16');
 	const updateInfo = document.createElement('div');
 	updateInfo.className = 'update-info';
 	
