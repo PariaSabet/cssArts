@@ -9,6 +9,7 @@ body{
   transform-origin: center center;
   justify-content: center;
   margin-top: -54px;
+  transform: scale(0.65);
 }
 .snowman-hat{
     border-bottom: 100px solid #FFAB00;
